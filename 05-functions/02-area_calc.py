@@ -24,7 +24,7 @@ def get_shape():
     except ValueError:
         print("Please enter a string")
 
-def sqaure_area():
+def square_area():
     length = float(input("Enter the length of side of the square: "))
     print(f"Area of your square is {math.pow(length, 2):.2f}")
 
@@ -51,13 +51,12 @@ def trapezium_area():
     side1 = float(input("Enter the length of the first parallel side: "))
     side2 = float(input("Enter the length of the second parallel side: "))
     height = float(input("Enter the height between parallel sides: "))
-    print(f"Area of your trapezium is {(side1 + side2) / (height * 0.5) :.2f}")
+    print(f"Area of your trapezium is {((side1 + side2) / 2) * height :.2f}")
 
 def parallelogram_area():
     base = float(input("Enter the base of the parallelogram: "))
     height = float(input("Enter the perpendicular height of the parallelogram: "))
     print(f"Area of your parallelogram is {base * height :.2f}")
 
-def main():
-    get_shape()
+get_shape()
     
